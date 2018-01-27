@@ -13,7 +13,7 @@ import com.senthink.www.config.WechatConfig;
 @MapperScan("com.senthink.www.dao")
 @SpringBootApplication
 @EnableConfigurationProperties({ColumbiaProperties.class, WechatConfig.class})
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 @RefreshScope
 public class DemoApplication {
 
