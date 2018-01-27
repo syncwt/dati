@@ -1,0 +1,229 @@
+{
+  "groups": [
+    {
+      "name": "senthink",
+      "type": "com.senthink.www.config.ColumbiaProperties",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties"
+    },
+    {
+      "name": "senthink.async",
+      "type": "com.senthink.www.config.ColumbiaProperties$Async",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties",
+      "sourceMethod": "getAsync()"
+    },
+    {
+      "name": "senthink.logging",
+      "type": "com.senthink.www.config.ColumbiaProperties$Logging",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties",
+      "sourceMethod": "getLogging()"
+    },
+    {
+      "name": "senthink.logging.logstash",
+      "type": "com.senthink.www.config.ColumbiaProperties$Logging$Logstash",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging",
+      "sourceMethod": "getLogstash()"
+    },
+    {
+      "name": "senthink.logging.smtp",
+      "type": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging",
+      "sourceMethod": "getSmtp()"
+    },
+    {
+      "name": "wechat",
+      "type": "com.senthink.www.config.WechatConfig",
+      "sourceType": "com.senthink.www.config.WechatConfig"
+    },
+    {
+      "name": "wechat.bluetooth-cfg",
+      "type": "com.senthink.www.config.WechatConfig$BluetoothCfg",
+      "sourceType": "com.senthink.www.config.WechatConfig",
+      "sourceMethod": "getBluetoothCfg()"
+    },
+    {
+      "name": "wechat.config",
+      "type": "com.senthink.www.config.WechatConfig$Config",
+      "sourceType": "com.senthink.www.config.WechatConfig",
+      "sourceMethod": "getConfig()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "senthink.async.core-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Async",
+      "defaultValue": 2
+    },
+    {
+      "name": "senthink.async.max-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Async",
+      "defaultValue": 50
+    },
+    {
+      "name": "senthink.async.queue-capacity",
+      "type": "java.lang.Integer",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Async",
+      "defaultValue": 10000
+    },
+    {
+      "name": "senthink.logging.logstash.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Logstash",
+      "defaultValue": false
+    },
+    {
+      "name": "senthink.logging.logstash.host",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Logstash",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "senthink.logging.logstash.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Logstash",
+      "defaultValue": 5000
+    },
+    {
+      "name": "senthink.logging.logstash.queue-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Logstash",
+      "defaultValue": 512
+    },
+    {
+      "name": "senthink.logging.smtp.asynchronous-sending",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": false
+    },
+    {
+      "name": "senthink.logging.smtp.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": false
+    },
+    {
+      "name": "senthink.logging.smtp.from",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": "lingcy@senthink.com"
+    },
+    {
+      "name": "senthink.logging.smtp.host",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": "smtp.senthink.com"
+    },
+    {
+      "name": "senthink.logging.smtp.password",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": "senthink1101"
+    },
+    {
+      "name": "senthink.logging.smtp.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": 25
+    },
+    {
+      "name": "senthink.logging.smtp.ssl",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": false
+    },
+    {
+      "name": "senthink.logging.smtp.to",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": "lingcy@lierda.com"
+    },
+    {
+      "name": "senthink.logging.smtp.username",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.ColumbiaProperties$Logging$Smtp",
+      "defaultValue": "lingcy@senthink.com"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.auth-key",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.auth-ver",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.ble-simple-protocol",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.close-strategy",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.conn-strategy",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.connect-protocol",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.crypt-method",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.manu-mac-pos",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.bluetooth-cfg.ser-mac-pos",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$BluetoothCfg"
+    },
+    {
+      "name": "wechat.config.appid",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$Config"
+    },
+    {
+      "name": "wechat.config.appsecret",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$Config"
+    },
+    {
+      "name": "wechat.config.catch-flash",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$Config"
+    },
+    {
+      "name": "wechat.config.load-x-m-l-config-delay",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$Config"
+    },
+    {
+      "name": "wechat.config.load-x-m-l-config-period",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$Config"
+    },
+    {
+      "name": "wechat.config.token",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$Config"
+    },
+    {
+      "name": "wechat.config.wechat-id",
+      "type": "java.lang.String",
+      "sourceType": "com.senthink.www.config.WechatConfig$Config"
+    }
+  ],
+  "hints": []
+}
